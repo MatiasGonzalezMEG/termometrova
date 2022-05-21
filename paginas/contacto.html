@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/estilos.css">
     <title>Contacto</title>
 </head>
@@ -30,7 +31,9 @@
     <main>
         <section class="contacto">
             <div class="contacto__cont">
-                <div class="contacto__form">
+                <div class="contacto__form" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" data-aos-duration="2000">
                     <h1>Contacto</h1>
                     <p>Ante cualquier consulta pueden consultarnos por este medio.</p>
                     <form class="formulario" action="enviar.php" method="post">
@@ -66,7 +69,7 @@
                         </div>
                     </form>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15599.547920178284!2d-58.42907544551769!3d-34.7202857817714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccdb2a1c269cd%3A0x15ced2a71c424cad!2zMzTCsDQyJzQyLjkiUyA1OMKwMjUnNDQuNCJX!5e0!3m2!1ses!2sar!4v1649863446971!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe data-aos-duration="3000" data-aos="fade-left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15599.547920178284!2d-58.42907544551769!3d-34.7202857817714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccdb2a1c269cd%3A0x15ced2a71c424cad!2zMzTCsDQyJzQyLjkiUyA1OMKwMjUnNDQuNCJX!5e0!3m2!1ses!2sar!4v1649863446971!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
             </div>
         </section>
     </main>
@@ -78,6 +81,9 @@
         </nav>
         <div><p>©2022 Matias Gonzalez. Todos los derechos reservados.</p></div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
