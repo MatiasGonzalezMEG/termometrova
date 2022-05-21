@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Termometros VA</title>
 </head>
@@ -48,12 +49,12 @@
         <section class="mainclientes">
             <h2 class="content__titulo">Nuestros clientes</h2>
                 <div class="content">
-                    <div class="content__client1" ></div>
-                    <div class="content__client2" ></div>
-                    <div class="content__client3" ></div>
-                    <div class="content__client4" ></div>
-                    <div class="content__client5" ></div>
-                    <div class="content__client6" ></div>
+                    <div class="content__client1" data-aos="flip-left" data-aos-duration="3000"></div>
+                    <div class="content__client2" data-aos="flip-left" data-aos-duration="3000"></div>
+                    <div class="content__client3" data-aos="flip-left" data-aos-duration="3000"></div>
+                    <div class="content__client4" data-aos="flip-left" data-aos-duration="3000"></div>
+                    <div class="content__client5" data-aos="flip-left" data-aos-duration="3000"></div>
+                    <div class="content__client6" data-aos="flip-left" data-aos-duration="3000"></div>
             </div>
         </section>
     </main>
@@ -65,6 +66,9 @@
         </nav>
         <div><p>©2022 Matias Gonzalez. Todos los derechos reservados.</p></div>
     </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
