@@ -1,68 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/imagenes/logo/icon_logo.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="shortcut icon" href="../assets/imagenes/logo/icon_logo.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Producto</title>
 </head>
+
 <body>
     <header>
-        <div>
-            <a href="index.html"><img src="../assets/imagenes/logo/logo.png" alt="termometrosVA"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="producto.html">Producto</a></li>
-                <li><a href="funcionamiento.html">Funcionamiento</a></li>
-                <li><a href="clientes.html">Clientes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <!-- Brand -->
+            <a class="navbar-brand" href="../index.html"><img src="../assets/imagenes/logo/logo.png"
+                    alt="Termometros"></a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="producto.html">Producto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="funcionamiento.html">Funcionamiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="clientes.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <section class="producto">
-            <div class="producto__imagen" data-aos="fade-right" data-aos-duration="2000" >
+            <div class="producto__imagen" data-aos="fade-right" data-aos-duration="2000">
                 <img src="../assets/imagenes/clientes/bidcom_4.jpeg" alt="Utilizando el termometro">
             </div>
             <div class="producto__text">
                 <h1 data-aos="zoom-in" data-aos-duration="2000">Características del Equipo</h1>
                 <div class="producto__contenedor" data-aos="fade-up" data-aos-duration="2000">
-                   <div class="producto1">Alarma en caso de fiebre</div>
-                   <div class="producto2">Distancia de medición de 3 a 5 cm</div>
-                   <div class="producto3">Rango de medición : 32º - 42,2º</div>
-                   <div class="producto4">Margen de error +- 0.2 C</div>
-                   <div class="producto5">Tiempo de reacción 0.1 segundo</div>
-                   <div class="producto6">Sensado de temperatura a través de la muñeca, sin necesidad de contacto</div>
-                   <div class="producto7">Dispenser apto para apoyar en escritorio o para colgar de la pared.</div>
-                   <div class="producto8">Base de MDF opcional con valor adicional de $3800.</div>
-                   <div class="producto9">Conexión a 220V</div>
-                   <div class="producto10">Desarrollado para uso intensivo.</div>
-                   <div class="producto11">Posee sanitizador mediante pulverizador, no es a chorro.</div>
-                   <div class="producto12">Medidas: 50x25x15</div>
-                </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Alarma en caso de fiebre</li>
+                        <li class="list-group-item">Distancia de medición de 3 a 5 cm</li>
+                        <li class="list-group-item">Rango de medición : 32º - 42,2º</li>
+                        <li class="list-group-item">Margen de error +- 0.2 C</li>
+                        <li class="list-group-item">Tiempo de reacción 0.1 segundo</li>
+                        <li class="list-group-item">Sensado de temperatura a través de la muñeca, sin necesidad de contacto</li>
+                        <li class="list-group-item">Dispenser apto para apoyar en escritorio o para colgar de la pared.</li>
+                        <li class="list-group-item">Base de MDF opcional con valor adicional de $3800.</li>
+                        <li class="list-group-item">Conexión a 220V</li>
+                        <li class="list-group-item">Desarrollado para uso intensivo.</li>
+                        <li class="list-group-item">Posee sanitizador mediante pulverizador, no es a chorro.</li>
+                        <li class="list-group-item">Medidas: 50x25x15</li>
+                    </ul>
             </div>
+
         </section>
     </main>
-    
+
     <footer>
         <nav>
             <a href="https://www.facebook.com/termometrosva"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/termometros_va"><i class="fa-brands fa-instagram"></i></a>
         </nav>
-        <div><p>©2022 Matias Gonzalez. Todos los derechos reservados.</p></div>
+        <div>
+            <p>©2022 Matias Gonzalez. Todos los derechos reservados.</p>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
+
 </html>

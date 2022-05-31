@@ -23,7 +23,7 @@ ul{
 	display: flex;
 	list-style: none;
 }
-li a{
+ul li a{
 	text-decoration: none;
 	color: #171717;
 	font-family: 'Oswald';
@@ -67,6 +67,7 @@ footer nav i:hover{
 /* Index */
 
 /* Index Parte superior */
+
 .introBanner{
 	background-image: url(../assets/imagenes/fondo/fondo.jpg);
 	background-attachment: fixed;
@@ -80,6 +81,7 @@ footer nav i:hover{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	padding-top: 40px;
 }
 .introBanner h1{
 	color: #EDEDED;
@@ -118,6 +120,7 @@ footer nav i:hover{
 	text-align: center;
 	padding-bottom: 20px;
 }
+
 .content{
 	display: grid;
 	grid-template-columns: 300px 300px 300px ;
@@ -163,6 +166,7 @@ footer nav i:hover{
 	background-position: center;
 	background-size: cover;
 }
+
 
 /* Resposive Tablet Index */
 
@@ -532,60 +536,11 @@ footer nav i:hover{
 	font-size: 30px;
 	text-align: center;
 }
-.producto__contenedor div{
-	color: #171717;
-	background-color: #EDEDED;
+.list-group{
 	font-family: 'Oswald';
-	font-weight: 600;
+	font-weight: 300;
 	font-size: 15px;
-	border-radius: 10px;
-	text-align: center;
-}
-.producto__contenedor{
-	display: grid;
-	grid-gap: 5px;
-	grid-template-areas: "prod1 prod2 prod3"
-						"prod4 prod5 prod6"
-						"prod7 prod7 prod7"
-						"prod8 prod9 prod10"
-						"prod11 prod11 prod12"
-	;
-}
-.producto1{
-	grid-area: prod1;
-}
-.producto2{
-	grid-area: prod2;
-}
-.producto3{
-	grid-area: prod3;
-}
-.producto4{
-	grid-area: prod4;
-}
-.producto5{
-	grid-area: prod5;
-}
-.producto6{
-	grid-area: prod6;
-}
-.producto7{
-	grid-area: prod7;
-}
-.producto8{
-	grid-area: prod8;
-}
-.producto9{
-	grid-area: prod9;
-}
-.producto10{
-	grid-area: prod10;
-}
-.producto11{
-	grid-area: prod11;
-}
-.producto12{
-	grid-area: prod12;
+	margin-bottom: 10px;
 }
 
 /* Resposive Tablet Producto */
@@ -795,7 +750,8 @@ footer nav i:hover{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin-bottom:0px;
+	margin-bottom: 0px;
+	padding-bottom: 10px;
 }
 
 .funcionamiento__text h1{
@@ -1281,12 +1237,15 @@ footer nav i:hover{
 	flex-direction: column;
 	align-items: center;
 	background-color: #EDEDED;
+	padding: 30px;
+	margin: 15px;
 	border-radius: 10px 100px / 120px;
 	color: #171717;
 	font-weight: 300;
 	font-size: 20px;
 	font-family: 'Oswald';
 }
+
 
 iframe{
 	width: 500px ;
