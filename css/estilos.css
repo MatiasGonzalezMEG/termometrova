@@ -79,13 +79,6 @@ footer div p {
   justify-content: space-evenly;
   padding-top: 40px;
 }
-.introBanner h1 {
-  color: #EDEDED;
-  font-family: "Oswald";
-  font-weight: 700;
-  font-size: 2.813rem;
-  text-align: center;
-}
 .introBanner p {
   color: #EDEDED;
   font-family: "Oswald";
@@ -94,6 +87,14 @@ footer div p {
   text-align: justify;
   width: 31.25rem;
   height: 15.625rem;
+}
+
+.introh1, .contacto__cont h1, .clientes__text h1, .funcionamiento__text h1, .producto__text h1 {
+  color: #EDEDED;
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 2.813rem;
+  text-align: center;
 }
 
 #video {
@@ -514,14 +515,6 @@ footer div p {
   width: 700px;
   padding-top: 20px;
 }
-.producto__text h1 {
-  color: #EDEDED;
-  font-family: "Oswald";
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
-}
-
 .list-group {
   font-family: "Oswald";
   font-weight: 300;
@@ -631,10 +624,6 @@ footer div p {
 }
 
 .funcionamiento__text h1 {
-  color: #EDEDED;
-  font-family: "Oswald";
-  font-weight: 700;
-  font-size: 30px;
   text-align: center;
   width: 500px;
   padding-top: 20px;
@@ -825,10 +814,6 @@ footer div p {
 }
 
 .clientes__text h1 {
-  color: #EDEDED;
-  font-family: "Oswald";
-  font-weight: 700;
-  font-size: 30px;
   text-align: center;
   padding-top: 10px;
 }
@@ -842,7 +827,7 @@ footer div p {
   margin-bottom: 20px;
 }
 
-.clienteimgs {
+.maps {
   display: grid;
   grid-template-columns: 250px 250px 250px;
   grid-template-rows: 360px 360px 360 px;
@@ -851,61 +836,61 @@ footer div p {
   padding-bottom: 20px;
 }
 
-.clienteimgs__cliente1 {
+.maps-key1 {
   width: 250px;
   height: 360px;
   background-color: white;
-  background-image: url(../assets/imagenes/clientes/bidcom_1.jpeg);
+  background-image: url(../assets/imagenes/clientes/bidcom.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 50% 20%/10% 40%;
 }
 
-.clienteimgs__cliente2 {
+.maps-key2 {
   width: 250px;
   height: 360px;
   background-color: white;
-  background-image: url(../assets/imagenes/clientes/clarin_1.jpeg);
+  background-image: url(../assets/imagenes/clientes/clarin.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 50% 20%/10% 40%;
 }
 
-.clienteimgs__cliente3 {
+.maps-key3 {
   width: 250px;
   height: 360px;
   background-color: white;
-  background-image: url(../assets/imagenes/clientes/argentina_1.jpeg);
+  background-image: url(../assets/imagenes/clientes/argentina.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 50% 20%/10% 40%;
 }
 
-.clienteimgs__cliente4 {
+.maps-key4 {
   width: 250px;
   height: 360px;
   background-color: white;
-  background-image: url(../assets/imagenes/clientes/seguda_1.jpeg);
+  background-image: url(../assets/imagenes/clientes/segunda.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 50% 20%/10% 40%;
 }
 
-.clienteimgs__cliente5 {
+.maps-key5 {
   width: 250px;
   height: 360px;
   background-color: white;
-  background-image: url(../assets/imagenes/clientes/race1.jpg);
+  background-image: url(../assets/imagenes/clientes/racing.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 50% 20%/10% 40%;
 }
 
-.clienteimgs__cliente6 {
+.maps-key6 {
   width: 250px;
   height: 360px;
   background-color: white;
-  background-image: url(../assets/imagenes/clientes/mercantil1.jpg);
+  background-image: url(../assets/imagenes/clientes/meridional.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 50% 20%/10% 40%;
@@ -1118,10 +1103,6 @@ footer div p {
 }
 
 .contacto__cont h1 {
-  color: #EDEDED;
-  font-family: "Oswald";
-  font-weight: 700;
-  font-size: 30px;
   padding-top: 20px;
   text-align: center;
 }

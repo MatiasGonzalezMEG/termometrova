@@ -92,13 +92,7 @@ footer{
 	justify-content: space-evenly;
 	padding-top: 40px;
 
-    h1{
-        color: $color4;
-	    font-family: $fontprincipal;
-	    font-weight: 700;
-	    font-size: 2.813rem;
-	    text-align: center;
-    }
+    
     p{
         color: $color4;
 	    font-family: $fontprincipal;
@@ -108,6 +102,13 @@ footer{
 	    width: 31.25rem;
 	    height: 15.625rem;
     }
+}
+.introh1{
+        color: $color4;
+	    font-family: $fontprincipal;
+	    font-weight: 700;
+	    font-size: 2.813rem;
+	    text-align: center;
 }
 #video{
 	width: 17.5rem;
@@ -144,35 +145,33 @@ footer{
 	    border-radius: 1.25rem;
     }
 }
-.content__client1{
-	background-image: url(../assets/imagenes/clientes/cliente1-01.png);
+@mixin sizes {
 	background-position: center;
 	background-size: cover;
+}
+.content__client1{
+	background-image: url(../assets/imagenes/clientes/cliente1-01.png);
+	@include sizes;
 }
 .content__client2{
 	background-image: url(../assets/imagenes/clientes/cliente2-02.png);
-	background-position: center;
-	background-size: cover;
+	@include sizes;
 }
 .content__client3{
 	background-image: url(../assets/imagenes/clientes/cliente3-03.png);
-	background-position: center;
-	background-size: cover;
+	@include sizes;
 }
 .content__client4{
 	background-image: url(../assets/imagenes/clientes/cliente4-04.png);
-	background-position: center;
-	background-size: cover;
+	@include sizes;
 }
 .content__client5{
 	background-image: url(../assets/imagenes/clientes/cliente5-05.png);
-	background-position: center;
-	background-size: cover;
+	@include sizes;
 }
 .content__client6{
 	background-image: url(../assets/imagenes/clientes/cliente6-06.png);
-	background-position: center;
-	background-size: cover;
+	@include sizes;
 }
 
 /* Resposive Tablet Index */
@@ -309,35 +308,33 @@ footer{
 	    margin-left: 10px;
     }
 }
-.content__client1{
-	background-image: url(../assets/imagenes/clientes/cliente1-01.png);
+@mixin sizes {
 	background-position: center;
 	background-size: cover;
+}
+.content__client1{
+	background-image: url(../assets/imagenes/clientes/cliente1-01.png);
+	@include sizes;
 }
 .content__client2{
 	background-image: url(../assets/imagenes/clientes/cliente2-02.png);
-	background-position: center;
-	background-size: cover;
+	@include sizes;
 }
 .content__client3{
 	background-image: url(../assets/imagenes/clientes/cliente3-03.png);
-	background-position: center;
-	background-size: cover;
+	@include sizes;
 }
 .content__client4{
 	background-image: url(../assets/imagenes/clientes/cliente4-04.png);
-	background-position: center;
-	background-size: cover;
+	@include sizes;
 }
 .content__client5{
 	background-image: url(../assets/imagenes/clientes/cliente5-05.png);
-	background-position: center;
-	background-size: cover;
+	@include sizes;
 }
 .content__client6{
 	background-image: url(../assets/imagenes/clientes/cliente6-06.png);
-	background-position: center;
-	background-size: cover;
+	@include sizes;
 }
 }
 }
@@ -540,11 +537,7 @@ footer{
 	padding-top: 20px;
 
     h1{
-        color: $color4;
-	    font-family: $fontprincipal;
-	    font-weight: 700;
-	    font-size: 30px;
-	    text-align: center;
+        @extend .introh1;
     }
 }
 .list-group{
@@ -661,10 +654,7 @@ footer{
 }
 .funcionamiento__text{
 	h1{
-		color: $color4;
-		font-family: $fontprincipal;
-		font-weight: 700;
-		font-size: 30px;
+		@extend .introh1;
 		text-align: center;
 		width: 500px;
 		padding-top: 20px;
@@ -859,10 +849,7 @@ footer{
 }
 .clientes__text{
 	h1{
-		color: $color4;
-		font-family: $fontprincipal;
-		font-weight: 700;
-		font-size: 30px;
+		@extend .introh1;
 		text-align: center;
 		padding-top: 10px;
 	}
@@ -876,7 +863,8 @@ footer{
 		margin-bottom: 20px;
 	}
 }
-.clienteimgs{
+
+.maps{
 	display: grid;
 	grid-template-columns: 250px 250px 250px;
 	grid-template-rows: 360px 360px 360 px;
@@ -884,60 +872,29 @@ footer{
 	gap: 20px;
 	padding-bottom: 20px;
 }
-.clienteimgs__cliente1{
-	width: 250px;
-	height: 360px;
-	background-color: $color5;
-	background-image: url(../assets/imagenes/clientes/bidcom_1.jpeg);
-	background-position: center;
-	background-size: cover;
-	border-radius: 50% 20% / 10% 40%;;
-}
-.clienteimgs__cliente2{
-	width: 250px;
-	height: 360px;
-	background-color: $color5;
-	background-image: url(../assets/imagenes/clientes/clarin_1.jpeg);
-	background-position: center;
-	background-size: cover;
-	border-radius: 50% 20% / 10% 40%;;
-}
-.clienteimgs__cliente3{
-	width: 250px;
-	height: 360px;
-	background-color: $color5;
-	background-image: url(../assets/imagenes/clientes/argentina_1.jpeg);
-	background-position: center;
-	background-size: cover;
-	border-radius: 50% 20% / 10% 40%;;
-}
-.clienteimgs__cliente4{
-	width: 250px;
-	height: 360px;
-	background-color: $color5;
-	background-image: url(../assets/imagenes/clientes/seguda_1.jpeg);
-	background-position: center;
-	background-size: cover;
-	border-radius: 50% 20% / 10% 40%;;
-}
-.clienteimgs__cliente5{
-	width: 250px;
-	height: 360px;
-	background-color: $color5;
-	background-image: url(../assets/imagenes/clientes/race1.jpg);
-	background-position: center;
-	background-size: cover;
-	border-radius: 50% 20% / 10% 40%;;
-}
-.clienteimgs__cliente6{
-	width: 250px;
-	height: 360px;
-	background-color: $color5;
-	background-image: url(../assets/imagenes/clientes/mercantil1.jpg);
-	background-position: center;
-	background-size: cover;
-	border-radius: 50% 20% / 10% 40%;;
-}
+
+$maps: (
+	key1: "bidcom",
+	key2: "clarin",
+	key3: "argentina",
+	key4: "segunda",
+	key5: "racing",
+	key6: "meridional"
+);
+
+	@each $key, $cliente in $maps {
+		.maps-#{$key}{
+			width: 250px;
+			height: 360px;
+			background-color: $color5;
+			background-image: url(../assets/imagenes/clientes/#{$cliente}.jpeg);
+			background-position: center;
+			background-size: cover;
+			border-radius: 50% 20% / 10% 40%;
+		}
+		}
+
+
 
 /* Responsive tablet Clientes */
 
@@ -1140,10 +1097,7 @@ footer{
 }
 .contacto__cont{
 	h1{
-		color: $color4;
-		font-family: $fontprincipal;
-		font-weight: 700;
-		font-size: 30px;
+		@extend .introh1;
 		padding-top: 20px;
 		text-align: center;
 	}
