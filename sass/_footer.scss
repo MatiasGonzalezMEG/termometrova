@@ -1,0 +1,32 @@
+@import 'variables';
+
+/* Footer */
+footer{
+	background-color: $color4;
+    
+    nav{
+        text-align: center;
+	    margin-bottom: 0.625rem;
+	    padding-top: 0.625rem;
+
+            i{
+            color: $color2;
+	        font-size: 2rem;
+	        letter-spacing: 0.625rem;
+            }
+            :hover{
+            color: $color1;
+            transform: scale(1.5);
+            transition: all 0.7s;
+            }
+        }
+    div{
+        p{
+            color: $color2;
+	    font-family: $fontprincipal;
+	    font-weight: 200;
+	    font-size: 15px;
+	    text-align: right;
+        }
+    }
+}

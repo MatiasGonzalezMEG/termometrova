@@ -1,11 +1,5 @@
 /* Variables colores */
 /* Variables Fuentes */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Header */
 header {
   display: flex;
@@ -38,6 +32,8 @@ li :hover {
   transition: all 0.7s;
 }
 
+/* Variables colores */
+/* Variables Fuentes */
 /* Footer */
 footer {
   background-color: #EDEDED;
@@ -63,6 +59,14 @@ footer div p {
   font-weight: 200;
   font-size: 15px;
   text-align: right;
+}
+
+/* Variables colores */
+/* Variables Fuentes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Index */
