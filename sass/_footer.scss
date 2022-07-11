@@ -30,3 +30,71 @@ footer{
         }
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width:1023px){
+
+    /* Resposive Tablet Footer */
+    footer{
+        background-color: $color4;
+    
+        div {
+            p{
+                color: $color2;
+                font-family: $fontprincipal;
+                font-weight: 200;
+                font-size: 0.625rem;
+                text-align: right;
+            }
+        }
+        nav{
+            text-align: center;
+            margin-bottom: 0.625rem;
+            padding-top: 0.625rem;
+    
+            i{
+                color: $color2;
+                font-size: 1rem;
+                letter-spacing: 0.625rem;
+            }
+            :hover{
+                color: $color1;
+                transform: scale(1.5);
+                transition: all 0.7s;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px){
+
+    /* Resposive Mobile Footer */
+    footer{
+        background-color: $color4;
+    
+        div{
+            p{
+                color: $color2;
+                font-family: $fontprincipal;
+                font-weight: 200;
+                font-size: 0.625rem;
+                text-align: right;
+            }
+        }
+        nav{
+            text-align: center;
+            margin-bottom: 0.625rem;
+            padding-top: 0.625rem;
+    
+            i{
+                color: $color2;
+                font-size: 1rem;
+                letter-spacing: 0.625rem;
+    
+                :hover{
+                    color: $color1;
+                    transform: scale(1.5);
+                    transition: all 0.7s;
+                }
+            }
+        }
+    }
+}

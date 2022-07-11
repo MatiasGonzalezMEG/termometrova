@@ -3,15 +3,25 @@
 /* Header */
 header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  position: sticky;
-  top: 0px;
   background-color: #EDEDED;
-  width: 100%;
-  height: 8.5rem;
-  z-index: 2;
+}
+
+.navbar {
+  padding: 0px;
+}
+
+.navbar-toggler {
+  margin: 0px;
+  padding: 0px;
+  background-color: #EDEDED;
+}
+
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
+  background-color: #EDEDED;
 }
 
 ul {
@@ -19,19 +29,29 @@ ul {
   list-style: none;
 }
 
-li a {
+.nav-link {
   text-decoration: none;
   color: #171717;
   font-family: "Oswald";
   font-weight: 500;
   font-size: 1.25rem;
-  margin-right: 0.625rem;
 }
-li :hover {
+.nav-link:hover {
   color: #DA0037;
-  transition: all 0.7s;
 }
 
+@media only screen and (max-width: 990px) {
+  .nav-link {
+    text-decoration: none;
+    color: #171717;
+    font-family: "Oswald";
+    font-weight: 200;
+    font-size: 1rem;
+  }
+  .nav-link:hover {
+    color: #DA0037;
+  }
+}
 /* Variables colores */
 /* Variables Fuentes */
 /* Footer */
@@ -61,6 +81,62 @@ footer div p {
   text-align: right;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Resposive Tablet Footer */
+  footer {
+    background-color: #EDEDED;
+  }
+  footer div p {
+    color: #171717;
+    font-family: "Oswald";
+    font-weight: 200;
+    font-size: 0.625rem;
+    text-align: right;
+  }
+  footer nav {
+    text-align: center;
+    margin-bottom: 0.625rem;
+    padding-top: 0.625rem;
+  }
+  footer nav i {
+    color: #171717;
+    font-size: 1rem;
+    letter-spacing: 0.625rem;
+  }
+  footer nav :hover {
+    color: #DA0037;
+    transform: scale(1.5);
+    transition: all 0.7s;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* Resposive Mobile Footer */
+  footer {
+    background-color: #EDEDED;
+  }
+  footer div p {
+    color: #171717;
+    font-family: "Oswald";
+    font-weight: 200;
+    font-size: 0.625rem;
+    text-align: right;
+  }
+  footer nav {
+    text-align: center;
+    margin-bottom: 0.625rem;
+    padding-top: 0.625rem;
+  }
+  footer nav i {
+    color: #171717;
+    font-size: 1rem;
+    letter-spacing: 0.625rem;
+  }
+  footer nav i :hover {
+    color: #DA0037;
+    transform: scale(1.5);
+    transition: all 0.7s;
+  }
+}
 /* Variables colores */
 /* Variables Fuentes */
 * {
@@ -175,67 +251,9 @@ footer div p {
 
 /* Resposive Tablet Index */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Responsive Tablet Header */
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-    background-color: #EDEDED;
-    width: 100%;
-    height: 8.5rem;
-  }
-
-  ul {
-    display: flex;
-    list-style: none;
-  }
-
-  li a {
-    text-decoration: none;
-    color: #171717;
-    font-family: "Oswald";
-    font-weight: 500;
-    font-size: 1rem;
-    margin-right: 0.625rem;
-  }
-  li :hover {
-    color: #DA0037;
-    transition: all 0.7s;
-  }
-
-  /* Resposive Tablet Footer */
-  footer {
-    background-color: #EDEDED;
-    /* Responsive Tablet Index */
-    /* Responsive Tablet Index Parte superior */
-    /* Responsive Tablet Index Parte Inferior (Nuestros clientes) */
-  }
-  footer div p {
-    color: #171717;
-    font-family: "Oswald";
-    font-weight: 200;
-    font-size: 0.625rem;
-    text-align: right;
-  }
-  footer nav {
-    text-align: center;
-    margin-bottom: 0.625rem;
-    padding-top: 0.625rem;
-  }
-  footer nav i {
-    color: #171717;
-    font-size: 1rem;
-    letter-spacing: 0.625rem;
-  }
-  footer nav :hover {
-    color: #DA0037;
-    transform: scale(1.5);
-    transition: all 0.7s;
-  }
-  footer .introBanner {
+  /* Responsive Tablet Index */
+  /* Responsive Tablet Index Parte superior */
+  .introBanner {
     background-image: url(../assets/imagenes/fondo/fondo.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -248,14 +266,14 @@ footer div p {
     align-content: center;
     align-items: center;
   }
-  footer .introBanner h1 {
+  .introBanner h1 {
     color: #EDEDED;
     font-family: "Oswald";
     font-weight: 700;
     font-size: 2.188rem;
     text-align: center;
   }
-  footer .introBanner p {
+  .introBanner p {
     color: #EDEDED;
     font-family: "Oswald";
     font-weight: 300;
@@ -264,17 +282,20 @@ footer div p {
     width: 600px;
     height: 150px;
   }
-  footer #video {
+
+  #video {
     width: 10.375rem;
     height: 23.313rem;
     border-radius: 1rem;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
   }
-  footer .mainclientes {
+
+  /* Responsive Tablet Index Parte Inferior (Nuestros clientes) */
+  .mainclientes {
     background-color: #444444;
   }
-  footer .mainclientes h2 {
+  .mainclientes h2 {
     color: #EDEDED;
     font-family: "Oswald";
     font-weight: 600;
@@ -282,14 +303,15 @@ footer div p {
     text-align: center;
     padding-bottom: 5px;
   }
-  footer .content {
+
+  .content {
     display: grid;
     grid-template-columns: 300px 300px;
     align-items: center;
     padding-bottom: 10px;
     grid-gap: 2px;
   }
-  footer .content div {
+  .content div {
     width: 280px;
     height: 80px;
     background-color: white;
@@ -297,32 +319,38 @@ footer div p {
     border-radius: 1.25rem;
     margin-left: 10px;
   }
-  footer .content__client1 {
+
+  .content__client1 {
     background-image: url(../assets/imagenes/clientes/cliente1-01.png);
     background-position: center;
     background-size: cover;
   }
-  footer .content__client2 {
+
+  .content__client2 {
     background-image: url(../assets/imagenes/clientes/cliente2-02.png);
     background-position: center;
     background-size: cover;
   }
-  footer .content__client3 {
+
+  .content__client3 {
     background-image: url(../assets/imagenes/clientes/cliente3-03.png);
     background-position: center;
     background-size: cover;
   }
-  footer .content__client4 {
+
+  .content__client4 {
     background-image: url(../assets/imagenes/clientes/cliente4-04.png);
     background-position: center;
     background-size: cover;
   }
-  footer .content__client5 {
+
+  .content__client5 {
     background-image: url(../assets/imagenes/clientes/cliente5-05.png);
     background-position: center;
     background-size: cover;
   }
-  footer .content__client6 {
+
+  .content__client6 {
     background-image: url(../assets/imagenes/clientes/cliente6-06.png);
     background-position: center;
     background-size: cover;
@@ -330,66 +358,6 @@ footer div p {
 }
 /* vista mobile */
 @media only screen and (max-width: 767px) {
-  /* Responsive mobile Header */
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-    background-color: #EDEDED;
-    width: 100%;
-    height: 7rem;
-  }
-  header div img {
-    width: 157px;
-    height: 76px;
-  }
-
-  ul {
-    display: flex;
-    list-style: none;
-  }
-
-  li a {
-    text-decoration: none;
-    color: #171717;
-    font-family: "Oswald";
-    font-weight: 500;
-    font-size: 0.9rem;
-  }
-  li :hover {
-    color: #DA0037;
-    transition: all 0.7s;
-  }
-
-  /* Resposive Mobile Footer */
-  footer {
-    background-color: #EDEDED;
-  }
-  footer div p {
-    color: #171717;
-    font-family: "Oswald";
-    font-weight: 200;
-    font-size: 0.625rem;
-    text-align: right;
-  }
-  footer nav {
-    text-align: center;
-    margin-bottom: 0.625rem;
-    padding-top: 0.625rem;
-  }
-  footer nav i {
-    color: #171717;
-    font-size: 1rem;
-    letter-spacing: 0.625rem;
-  }
-  footer nav i :hover {
-    color: #DA0037;
-    transform: scale(1.5);
-    transition: all 0.7s;
-  }
-
   /* Responsive Mobile Index */
   /* Responsive Mobile Index Parte superior */
   .introBanner {
@@ -929,70 +897,70 @@ footer div p {
     margin-bottom: 10px;
   }
 
-  .clienteimgs {
+  .maps {
     display: grid;
     grid-template-columns: 200px 200px;
     grid-template-rows: 288px 288px;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 6px;
     padding-bottom: 10px;
   }
 
-  .clienteimgs__cliente1 {
+  .maps-key1 {
     width: 200px;
     height: 288px;
     background-color: white;
-    background-image: url(../assets/imagenes/clientes/bidcom_1.jpeg);
+    background-image: url(../assets/imagenes/clientes/bidcom.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 50% 20%/10% 40%;
   }
 
-  .clienteimgs__cliente2 {
+  .maps-key2 {
     width: 200px;
     height: 288px;
     background-color: white;
-    background-image: url(../assets/imagenes/clientes/clarin_1.jpeg);
+    background-image: url(../assets/imagenes/clientes/clarin.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 50% 20%/10% 40%;
   }
 
-  .clienteimgs__cliente3 {
+  .maps-key3 {
     width: 200px;
     height: 288px;
     background-color: white;
-    background-image: url(../assets/imagenes/clientes/argentina_1.jpeg);
+    background-image: url(../assets/imagenes/clientes/argentina.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 50% 20%/10% 40%;
   }
 
-  .clienteimgs__cliente4 {
+  .maps-key4 {
     width: 200px;
     height: 288px;
     background-color: white;
-    background-image: url(../assets/imagenes/clientes/seguda_1.jpeg);
+    background-image: url(../assets/imagenes/clientes/segunda.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 50% 20%/10% 40%;
   }
 
-  .clienteimgs__cliente5 {
+  .maps-key5 {
     width: 200px;
     height: 288px;
     background-color: white;
-    background-image: url(../assets/imagenes/clientes/race1.jpg);
+    background-image: url(../assets/imagenes/clientes/racing.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 50% 20%/10% 40%;
   }
 
-  .clienteimgs__cliente6 {
+  .maps-key6 {
     width: 200px;
     height: 288px;
     background-color: white;
-    background-image: url(../assets/imagenes/clientes/mercantil1.jpg);
+    background-image: url(../assets/imagenes/clientes/meridional.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 50% 20%/10% 40%;
@@ -1027,70 +995,70 @@ footer div p {
     margin-bottom: 5px;
   }
 
-  .clienteimgs {
+  .maps {
     display: grid;
     grid-template-columns: 150px 150px;
     grid-template-rows: 210px 210px;
     justify-content: space-evenly;
-    gap: 5px;
-    padding-bottom: 5px;
+    gap: 10px;
+    padding-bottom: 10px;
   }
 
-  .clienteimgs__cliente1 {
+  .maps-key1 {
     width: 150px;
     height: 210px;
     background-color: white;
-    background-image: url(../assets/imagenes/clientes/bidcom_1.jpeg);
+    background-image: url(../assets/imagenes/clientes/bidcom.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 50% 20%/10% 40%;
   }
 
-  .clienteimgs__cliente2 {
+  .maps-key2 {
     width: 150px;
     height: 210px;
     background-color: white;
-    background-image: url(../assets/imagenes/clientes/clarin_1.jpeg);
+    background-image: url(../assets/imagenes/clientes/clarin.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 50% 20%/10% 40%;
   }
 
-  .clienteimgs__cliente3 {
+  .maps-key3 {
     width: 150px;
     height: 210px;
     background-color: white;
-    background-image: url(../assets/imagenes/clientes/argentina_1.jpeg);
+    background-image: url(../assets/imagenes/clientes/argentina.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 50% 20%/10% 40%;
   }
 
-  .clienteimgs__cliente4 {
+  .maps-key4 {
     width: 150px;
     height: 210px;
     background-color: white;
-    background-image: url(../assets/imagenes/clientes/seguda_1.jpeg);
+    background-image: url(../assets/imagenes/clientes/segunda.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 50% 20%/10% 40%;
   }
 
-  .clienteimgs__cliente5 {
+  .maps-key5 {
     width: 150px;
     height: 210px;
     background-color: white;
-    background-image: url(../assets/imagenes/clientes/race1.jpg);
+    background-image: url(../assets/imagenes/clientes/racing.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 50% 20%/10% 40%;
   }
 
-  .clienteimgs__cliente6 {
+  .maps-key6 {
     width: 150px;
     height: 210px;
     background-color: white;
-    background-image: url(../assets/imagenes/clientes/mercantil1.jpg);
+    background-image: url(../assets/imagenes/clientes/meridional.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 50% 20%/10% 40%;
@@ -1267,7 +1235,7 @@ iframe {
   }
 
   .contactobtn {
-    font-size: 8px;
+    font-size: 20px;
     font-family: "Oswald";
     margin-bottom: 1px;
     padding: 1px;
