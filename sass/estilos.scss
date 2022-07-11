@@ -824,11 +824,15 @@ $maps: (
 
 .contacto{
 	background-image: url(../assets/imagenes/fondo/fondo.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-bottom:0px;
+
 }
 .contacto__cont{
 	h1{
@@ -879,6 +883,12 @@ iframe{
 
 /* Responsive tablet Contacto */
 @media only screen and (min-width: 768px) and (max-width:1023px){
+	
+	.contacto{
+		display: flex;
+		flex-direction: column;
+	}
+	
 	.contacto__cont{
 		h1{
 			color: $color4;
@@ -939,6 +949,12 @@ iframe{
 /* Responsive Mobile contacto */
 
 @media only screen and (max-width: 767px){
+
+	.contacto{
+		display: flex;
+		flex-direction: column;
+	}
+	
 	.contacto__cont{
 		display: flex;
 		flex-direction: column;

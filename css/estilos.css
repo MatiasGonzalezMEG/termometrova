@@ -60,7 +60,6 @@ footer {
 }
 footer nav {
   text-align: center;
-  margin-bottom: 0.625rem;
   padding-top: 0.625rem;
 }
 footer nav i {
@@ -79,6 +78,7 @@ footer div p {
   font-weight: 200;
   font-size: 15px;
   text-align: right;
+  margin-bottom: 0px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1067,6 +1067,9 @@ footer div p {
 /* Contacto */
 .contacto {
   background-image: url(../assets/imagenes/fondo/fondo.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1124,6 +1127,11 @@ iframe {
 
 /* Responsive tablet Contacto */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .contacto {
+    display: flex;
+    flex-direction: column;
+  }
+
   .contacto__cont h1 {
     color: #EDEDED;
     font-family: "Oswald";
@@ -1183,6 +1191,11 @@ iframe {
 }
 /* Responsive Mobile contacto */
 @media only screen and (max-width: 767px) {
+  .contacto {
+    display: flex;
+    flex-direction: column;
+  }
+
   .contacto__cont {
     display: flex;
     flex-direction: column;
